@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+         http://www.springframework.org/schema/beans
+         http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="commonSkills" class="java.util.ArrayList">
+        <constructor-arg>
+            <list>
+                <value>Java</value>
+                <value>Spring Boot</value>
+                <value>Angular</value>
+            </list>
+        </constructor-arg>
+    </bean>
+
+    <bean id="employee1" class="com.example.cognizant.model.Employee">
+        <property name="id" value="1"/>
+        <property name="name" value="Sayan Saha"/>
+        <property name="department" value="Computer Science"/>
+        <property name="email" value="sayansaha@cognizant.com"/>
+        <property name="skills" ref="commonSkills"/>
+    </bean>
+
+    <bean id="employee2" class="com.example.cognizant.model.Employee">
+        <property name="id" value="2"/>
+        <property name="name" value="Harry Brook"/>
+        <property name="department" value="Manager"/>
+        <property name="email" value="harrybrook@cognizant.com"/>
+        <property name="skills" ref="commonSkills"/>
+    </bean>
+
+    <bean id="employee3" class="com.example.cognizant.model.Employee">
+        <property name="id" value="3"/>
+        <property name="name" value="Emma Watson"/>
+        <property name="department" value="HR"/>
+        <property name="email" value="emma.watson@cognizant.com"/>
+        <property name="skills" ref="commonSkills"/>
+    </bean>
+
+    <bean id="employee4" class="com.example.cognizant.model.Employee">
+        <property name="id" value="4"/>
+        <property name="name" value="John Doe"/>
+        <property name="department" value="Finance"/>
+        <property name="email" value="john.doe@cognizant.com"/>
+        <property name="skills" ref="commonSkills"/>
+    </bean>
+
+    <bean id="employee-list" class="java.util.ArrayList">
+        <constructor-arg>
+            <list>
+                <ref bean="employee1"/>
+                <ref bean="employee2"/>
+                <ref bean="employee3"/>
+                <ref bean="employee4"/>
+            </list>
+        </constructor-arg>
+    </bean>
+
+</beans>

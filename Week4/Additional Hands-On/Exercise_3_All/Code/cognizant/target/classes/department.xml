@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+         http://www.springframework.org/schema/beans
+         http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="department1" class="java.lang.String">
+        <constructor-arg value="Computer Science"/>
+    </bean>
+
+    <bean id="department2" class="java.lang.String">
+        <constructor-arg value="HR"/>
+    </bean>
+
+    <bean id="department3" class="java.lang.String">
+        <constructor-arg value="Finance"/>
+    </bean>
+
+    <bean id="department4" class="java.lang.String">
+        <constructor-arg value="Manager"/>
+    </bean>
+
+    <bean id="departmentList" class="java.util.ArrayList">
+        <constructor-arg>
+            <list>
+                <ref bean="department1"/>
+                <ref bean="department2"/>
+                <ref bean="department3"/>
+                <ref bean="department4"/>
+            </list>
+        </constructor-arg>
+    </bean>
+
+</beans>
