@@ -1,0 +1,27 @@
+button{
+    background-color: lightgreen;
+    padding: 6px;
+    border: 3px solid black;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.mypage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    margin-top: 200px;
+}
+
+.mybox1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 350px;
+}
+
+.mybox2{
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,10 @@
+.mydiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(132, 7, 7);
+  height: 100vh; 
+  text-align: center;
+
+}
+
