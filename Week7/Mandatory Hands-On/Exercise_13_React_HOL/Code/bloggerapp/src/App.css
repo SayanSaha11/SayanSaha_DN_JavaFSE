@@ -1,0 +1,21 @@
+.App {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.first, .second, .third{
+  flex: 1;
+  padding: 15px;
+  padding-left: 95px;
+  align-items: center;
+  justify-content: center;
+}
+
+.first, .second{
+  border-right: 8px solid black;
+
+}
+
+
