@@ -1,0 +1,33 @@
+
+a {
+  display: inline-block;
+  margin:3px 5px;
+  padding: 5px 5px;
+  border-radius: 3px;
+ text-decoration: none;
+}
+a.dark{
+background-color: #333;
+color:#eee;
+}
+a.light{
+ background-color: #eee;
+ color:#333;
+}
+
+.light {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 5px;
+  margin-right: 10px;
+  border: 1px solid #000;
+}
+
+.dark {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 5px;
+  margin-right: 10px;
+  border: 1px solid #fff;
+}
+

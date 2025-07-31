@@ -1,0 +1,32 @@
+.container{
+    text-align: center;
+    margin-top: 300px;
+}
+
+.container h1{
+    color: red;
+    font-weight: bold;
+}
+
+form{
+    text-align: center;
+}
+
+form div{
+    margin-bottom: 15px;
+}
+
+input, textarea{
+    width: 200px;
+    margin-left: 30px;
+}
+
+.inputname{
+    margin-left: 60px;
+}
+
+button{
+    margin-left: 100px;
+    padding: 5px 15px;
+    border: 1px solid black;
+}
